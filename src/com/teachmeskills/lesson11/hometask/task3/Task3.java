@@ -9,10 +9,10 @@ public class Task3 {
         int capacity = 0;
         while (sc.hasNextInt()){
             capacity = sc.nextInt();
-            if(capacity < 100){
+            if(capacity < 100 && capacity > 0){
                 break;
             }
-            System.out.println("Please, enter less number.");
+            System.out.println("Please, enter less number or bigger then zero.");
         }
 
         ArrayList<Integer> numbers = new ArrayList<>(capacity);
